@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!--
+TODO:
+1.Enter your name in h1 and designation in h3
+2.Replace all the placeholder images with suitable images of the same size reflecting you and your projects.Feel free to use the sample images provided
+3.Replace the content of headings App1,App2,App3,App4 with suitable headings of your projects & provide their github links in the corresponding links
+4.Make all the elements in the page responsive & align its content as shown in the output sample with the aforementioned using bootstrap
+
+-->
+
+<html>
+<head>
+    <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background: slategrey;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <!-- Defining the top row and the image-->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-xl-2">
+            <img class="img-fluid" align="left" src="my.png" class="img-responsive" width="100px" height="100px">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 offset-md-3"></div>
+        <div class="col-md-3 offset-md-3">
+            <h1>Nikesh Koirala</h1></div>
+        <div class="col-md-3 offset-md-3"></div>
+        <div class="col-md-3 offset-md-3">
+            <h2>Student</h2></div>
+    </div>
+    <div class="grid_container">
+        <!-- Here I linked the main image-->
+        <img class="img-fluid" src="../Documentation/Image7.jpg" class="img-responsive" width="1140px" height="350px">
+    </div>
+    <div>
+        <h2>Featured Work </h2>
+    </div>
+    <div class="media">
+        <div class="row">
+            <div class="col-sm-3 text-center">
+                <!-- Setting all the options. I used img-fluid to set it up-->
+                <img class="img-fluid" src="../Documentation/image4.jpg" class="img-responsive">
+                <h3>Data Structure Project</h3>
+                <p><a href="https://github.com/koiralanikesh/CS303">Link to project</a></p>
+            </div>
+            <div class="col-sm-3 text-center">
+                <img class="img-fluid" src="../Documentation/image3.jpg" class="img-responsive">
+                <h3>CS490 ICP1</h3>
+                <p><a href="#">Link to project</a></p>
+            </div>
+            <div class="col-sm-3 text-center">
+                <img class="img-fluid" src="../Documentation/image2.jpg" class="img-responsive">
+                <h3>App3</h3>
+                <p><a href="#">Link to project</a></p>
+            </div>
+            <div class="col-sm-3 text-center">
+                <img class="img-fluid" src="../Documentation/image5.jpg" class="img-responsive">
+                <h3>App4</h3>
+                <p><a href="#">Link to project</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
