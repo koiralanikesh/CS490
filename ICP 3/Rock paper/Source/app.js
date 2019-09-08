@@ -1,3 +1,4 @@
+//Choosing random number
 function computer_choice() {
     const choices = ["r", "p", "s"];
     const randomNum = Math.floor(Math.random() * 3);
@@ -5,7 +6,7 @@ function computer_choice() {
     if (randomNum == "1") return "p";
     else return "s";
 }
-
+//converting r, p, s into rock, paper and scissors
 function convertToWord(letter) {
     if (letter == "r") return "Rock";
     if (letter == "s") return "Scissors";
@@ -25,7 +26,7 @@ function lose(userChoice, computerChoice) {
 function draw(userChoice, computerChoice) {
     document.querySelector(".results>p").innerHTML = " You chose: " + convertToWord(userChoice) + ". Computer chose: " + convertToWord(computerChoice) + ". It is a draw! Play Again.";
 }
-
+//defining the main function
 function rule(userChoice) {
     const computerChoice = computer_choice();
     if (userChoice + computerChoice == "rs") {
@@ -44,7 +45,7 @@ function rule(userChoice) {
         draw(userChoice, computerChoice);
     }
 }
-
+//getting user input
 function main() {
     document.getElementById("rock").addEventListener("click", function () {
         rule("r");
