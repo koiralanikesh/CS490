@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  // 1. write Typescript code in "app.component.ts" to work with ToDo list
+</head>
+<body>
+<div class="container">
+  <h1><br>{{title}} </h1>
+  <br>
+  <div class="todo-list">
+    <div class="todo-list__head" >
+      <div class="todo-list-head__text-input" >
+        Add a new item <input type="text" id="ItemDes" ng-change="newItems(this)" value="">
+        <button type="button"  (click)="newItems( )">Submit </button>
+      </div>
+    </div>
+    <div class="todo-list__items" *ngFor="let item of items; let i = index;">
+      <li  class="{{ item.complete }}">
+        {{ item.itemNumber }}
+        <button type="button"  (click)="completeItem(item.itemNumber)">{{item.buttonText}}</button>
+        {{ item.description }}
+        <div>
+          <button type="button" class='todo-list-item__trash' (click)="deleteItem(i)">Del</button>
+        </div>
+      </li>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
