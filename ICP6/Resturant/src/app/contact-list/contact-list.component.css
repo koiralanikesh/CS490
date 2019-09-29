@@ -1,0 +1,21 @@
+#row-1{
+  margin-top: 80px;
+}
+
+.parent-container {
+  position: relative;
+  height:100%;
+  width: 100%;
+}
+
+.child-container {
+  color: gray;
+  text-align: center;
+  position: center;
+
+}
+.desc {
+  font-family: Georgia;
+  font-size: 17px;
+}
+
